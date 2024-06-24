@@ -225,7 +225,7 @@ item.dragon_ring.0.name=§6Pierścień smoków
 item.dragon_ring.0.tooltip1=§6Rozmiar gracza $rsize: normalnego
 item.dragon_ring.0.tooltip2=§6Naciśnij §r<§e*breathkb:§r>§6 aby zionąć ogniem
 item.dragon_ring.0.tooltip3=§6Daje niewrażliwość na ogień
-item.dragon_ring.0.tooltip4=§2Daje noktowizję $nightvision:
+item.dragon_ring.0.tooltip4=§2Daje noktowizję §r<§e*denvkb:§r>
 
 item.teddy_bear.0.name=Pluszowy miś
 item.teddy_bear.0.tooltip1=§6Jeżeli trzymany podczas snu, daje wzmocnienie
