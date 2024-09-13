@@ -81,10 +81,6 @@ public class AbilityPoisonAffinity extends Ability implements IAttackAbility, IP
 				return true;
 			}
 		}
-		//		final String e = effect.getPotion().getRegistryName().toString();
-		//		if (e.contentEquals("minecraft:poison") || e.contentEquals("minecraft:hunger") || e.contentEquals("lycanitesmobs:plague")) {
-		//			return true;
-		//		}
 		return cancel;
 	}
 }

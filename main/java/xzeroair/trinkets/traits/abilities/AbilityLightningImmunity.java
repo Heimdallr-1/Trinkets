@@ -38,7 +38,7 @@ public class AbilityLightningImmunity extends Ability implements ITickableAbilit
 		}
 		if (lightning_resist != null) {
 			if (!entity.isPotionActive(lightning_resist)) {
-				entity.addPotionEffect(new PotionEffect(lightning_resist, 60, 0, false, false));
+				entity.addPotionEffect(new PotionEffect(lightning_resist, 400, 0, false, false));
 			}
 			if (entity.world.isRemote) {
 				if (entity.isPotionActive(lightning_resist)) {

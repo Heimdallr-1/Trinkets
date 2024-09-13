@@ -183,6 +183,11 @@ public class EntityProperties extends CapabilityBase<EntityProperties, EntityLiv
 		if (this.isLogin()) {
 			this.getRaceHandler().setFirstUpdate(true);
 		}
+		//		if (player.getName().equalsIgnoreCase("xzeroair") && player.isSneaking() && ((player.ticksExisted % 40) == 0)) {
+		//			if (!world.isRemote && (object instanceof EntityPlayerMP)) {
+		//				NetworkHandler.sendTo(new OpenTrinketGui(4), (EntityPlayerMP) object);
+		//			}
+		//		}
 		this.updateRace();
 		abilities.updateAbilityHandler();
 		this.getRaceHandler().onTick();
@@ -300,7 +305,6 @@ public class EntityProperties extends CapabilityBase<EntityProperties, EntityLiv
 					return;
 				}
 				oldProperties.onTransformEnd();
-				//				this.getElementalAttributes().setPrimaryElement(Elements.NEUTRAL);
 				AttributeHelper.removeAttributesByUUID(object, this.getPreviousRace().getUUID(), oldProperties.getRace().getUUID());
 				this.setPreviousRace(oldProperties.getRace());
 				final Entity mount = object.getRidingEntity();
@@ -314,13 +318,6 @@ public class EntityProperties extends CapabilityBase<EntityProperties, EntityLiv
 					}
 				}
 				properties = newRace.getRaceHandler(object).setEntityProperties(this);
-				//				if ((raceProvider != null) && !raceProvider.isEmpty()) {
-				//					ItemStack stack = raceProvider;
-				//					Item item = stack.getItem();
-				//					if (item instanceof IElementProvider) { // THIS IS BAD, WE NEED A TEMPORARY ELEMENT
-				//						this.getElementalAttributes().setPrimaryElement(((IElementProvider) item).getPrimaryElement(stack));
-				//					}
-				//				}
 				properties.onTransform();
 				this.setCurrent(newRace);
 

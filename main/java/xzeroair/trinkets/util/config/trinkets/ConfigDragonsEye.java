@@ -118,25 +118,35 @@ public class ConfigDragonsEye {
 			@LangKey(PREFIX + ".iceandfire.recipe.stage")
 			public int stage = 5;
 
+			@Config.Comment("Should there be a Fire Variant of the Dragons eye")
+			@Name("01. Fire Variant")
+			@LangKey(PREFIX + ".iceandfire.fire.variant")
+			public boolean FIRE_VARIANT = true;
+
 			@Config.Comment("Should there be a Ice Variant of the Dragons eye")
-			@Name("01. Ice Variant")
+			@Name("02. Ice Variant")
 			@LangKey(PREFIX + ".iceandfire.ice.variant")
 			public boolean ICE_VARIANT = true;
 
 			@Config.Comment("Should the Ice Variant have Frost Walker")
-			@Name("02. Frost Walker")
+			@Name("03. Frost Walker")
 			@LangKey(PREFIX + ".iceandfire.ice.frostwalker")
 			public boolean FROST_WALKER = true;
 
 			@Config.Comment("Should there be a Lightning Variant of the Dragons eye")
-			@Name("03. Lightning Variant")
+			@Name("04. Lightning Variant")
 			@LangKey(PREFIX + ".iceandfire.lightning.variant")
 			public boolean LIGHTNING_VARIANT = true;
 
 			@Config.Comment("Should the Lightning Variant have Paralysis Immunity")
-			@Name("04. Paralysis Immunity")
+			@Name("05. Paralysis Immunity")
 			@LangKey(PREFIX + ".iceandfire.lightning.paralysis")
 			public boolean PARALYSIS_IMMUNITY = true;
+
+			@Config.Comment("Should the base Dragons eye provide Fire Resistance")
+			@Name("99. Default Resist")
+			@LangKey(PREFIX + ".iceandfire.default.resist")
+			public boolean DE_FIRE_RESIST = true;
 		}
 
 		@Name("Fire Resistance Tiers")

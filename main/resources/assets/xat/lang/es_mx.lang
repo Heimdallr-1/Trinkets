@@ -137,6 +137,9 @@ ability.safe_guard.name=§6Guardia segura
 ability.safe_guard.tooltip1=Da el efecto Resistencia
 ability.safe_guard.tooltip2=Puede ignorar daño cada $sohcount: golpes
 
+ability.frost_walker.name=Frost Walker
+ability.ice_immunity.name=Ice Immunity
+
 ability.firstaid_reflex.name=Reflejos rapidos
 ability.firstaid_reflex.tooltip1=Probabilidad de ignorar tiros a la cabeza fatales
 
@@ -621,6 +624,8 @@ xat.config.server.dragons_eye.toughasnails.immunity.cold.tooltip=Si Tough as Nai
 
 xat.config.server.dragons_eye.iceandfire.recipe.stage=Etapa del Craneo
 xat.config.server.dragons_eye.iceandfire.recipe.stage.tooltip=Si Ice and Fire esta instalado, deberia el Ojo de Dragon requerir un craneo de una Etapa especifica para su receta?.\nAsignalo en 0 para cualquier nivel
+xat.config.server.dragons_eye.iceandfire.fire.variant=Fire Variant
+xat.config.server.dragons_eye.iceandfire.fire.variant.tooltip=Should there be an Fire Variant of the Dragons eye
 xat.config.server.dragons_eye.iceandfire.ice.variant=Variante de hielo
 xat.config.server.dragons_eye.iceandfire.ice.variant.tooltip=Deberia haber una variante de hielo para el Ojo de Dragon?
 xat.config.server.dragons_eye.iceandfire.ice.frostwalker=Paso helado
@@ -629,6 +634,8 @@ xat.config.server.dragons_eye.iceandfire.lightning.variant=Variante de rayo
 xat.config.server.dragons_eye.iceandfire.lightning.variant.tooltip=Deberia haber una variante de rayo para el Ojo de Dragon?
 xat.config.server.dragons_eye.iceandfire.lightning.paralysis=Inmunidad a Parálisis
 xat.config.server.dragons_eye.iceandfire.lightning.paralysis.tooltip=Debería la variante de rayo aplicar inmunidad a Parálisis?
+xat.config.server.dragons_eye.iceandfire.default.resist=Default Resist
+xat.config.server.dragons_eye.iceandfire.default.resist.tooltip=Should the Base Dragons Eye have Fire Resistance
 
 xat.config.client.dragons_eye.growl.enabled=Rugido de dragon
 xat.config.client.dragons_eye.growl.enabled.tooltip=Cuando el Buscador de tesoros esta Habilitado, deberia reproducirse un rugido de dragon cuando se encuentra un tesoro?
@@ -638,6 +645,8 @@ xat.config.client.dragons_eye.growl.volume=Volumen del rugido de dragon
 xat.config.client.dragons_eye.growl.volume.tooltip=Control del volumen del rugido de dragon
 xat.config.client.dragons_eye.orefinder.refresh.rate=Tasa de actualizacion
 xat.config.client.dragons_eye.orefinder.refresh.rate.tooltip=Determina que tan frecuentemente el Buscador de tesoros busca tesoros
+xat.config.client.dragons_eye.orefinder.particles=Max Particles
+xat.config.client.dragons_eye.orefinder.particles.tooltip=Ore Finder Max Particle Count
 
 xat.config.ender_tiara=Corona de Reina ender
 xat.config.ender_tiara.tooltip=Configuracion de la Corona de Reina ender

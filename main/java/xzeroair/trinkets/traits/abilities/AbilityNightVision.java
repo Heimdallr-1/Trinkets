@@ -24,15 +24,17 @@ public class AbilityNightVision extends Ability implements ITickableAbility, ITo
 		boolean potActive = entity.isPotionActive(MobEffects.NIGHT_VISION);
 		boolean isClient = entity.getEntityWorld().isRemote;
 		if (this.abilityEnabled()) {
-			if (!potActive || ((entity.ticksExisted % 400) == 0)) {
-				entity.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 800, 0, false, false));
+			if (!isClient) {
+				if (!potActive || ((entity.ticksExisted % 400) == 0)) {
+					entity.addPotionEffect(new PotionEffect(MobEffects.NIGHT_VISION, 800, 0, false, false));
+				}
 			}
 		} else {
-			if (potActive) {
+			if (!isClient && potActive) {
 				entity.removePotionEffect(MobEffects.NIGHT_VISION);
 			}
 		}
-		if (isClient && potActive) {
+		if (isClient && entity.isPotionActive(MobEffects.NIGHT_VISION)) {
 			entity.getActivePotionEffect(MobEffects.NIGHT_VISION).setPotionDurationMax(true);
 		}
 	}
@@ -95,7 +97,6 @@ public class AbilityNightVision extends Ability implements ITickableAbility, ITo
 	public void loadStorage(NBTTagCompound compound) {
 		if (compound.hasKey("enabled")) {
 			enabled = compound.getBoolean("enabled");
-
 		}
 	}
 

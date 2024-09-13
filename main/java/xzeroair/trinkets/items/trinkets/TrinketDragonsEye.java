@@ -56,16 +56,18 @@ public class TrinketDragonsEye extends AccessoryBase {
 		if (tab == this.getCreativeTab()) {
 			final ItemStack normal = new ItemStack(this, 1, 0);
 			items.add(normal);
-			final ItemStack fire = new ItemStack(this, 1, 0);
-			Capabilities.getTrinketProperties(fire, prop -> {
-				prop.setVariant(1);
-				prop.getElementAttributes().setPrimaryElement(Elements.FIRE);
-			});
-			items.add(fire);
+			if (serverConfig.compat.iaf.FIRE_VARIANT) {
+				final ItemStack fire = new ItemStack(this, 1, 0);
+				Capabilities.getTrinketProperties(fire, prop -> {
+					prop.setVariant(1);
+					prop.getElementAttributes().setPrimaryElement(Elements.FIRE);
+				});
+				items.add(fire);
+			}
 			if (serverConfig.compat.iaf.ICE_VARIANT) {
 				final ItemStack ice = new ItemStack(this, 1, 0);
 				Capabilities.getTrinketProperties(ice, prop -> {
-					prop.setVariant(1);
+					prop.setVariant(2);
 					prop.getElementAttributes().setPrimaryElement(Elements.ICE);
 				});
 				items.add(ice);
@@ -73,7 +75,7 @@ public class TrinketDragonsEye extends AccessoryBase {
 			if (serverConfig.compat.iaf.LIGHTNING_VARIANT) {
 				final ItemStack lightning = new ItemStack(this, 1, 0);
 				Capabilities.getTrinketProperties(lightning, prop -> {
-					prop.setVariant(2);
+					prop.setVariant(3);
 					prop.getElementAttributes().setPrimaryElement(Elements.LIGHTNING);
 				});
 				items.add(lightning);
@@ -111,14 +113,21 @@ public class TrinketDragonsEye extends AccessoryBase {
 		final Element element = this.getPrimaryElement(stack);
 		final boolean isIceVariant = element == Elements.ICE;
 		final boolean isLightningVariant = element == Elements.LIGHTNING;
-		final KeyEntry key2 = new OptionEntry("variantresist", new TextComponentTranslation(isIceVariant ? "xat.effect.ice_resistance" : isLightningVariant ? "xat.effect.lightning_resistance" : "effect.fireResistance").getFormattedText());
+		final KeyEntry key2 = new OptionEntry(
+				"variantresist",
+				new TextComponentTranslation(
+						(element == Elements.FIRE) || ((element == Elements.NEUTRAL) && serverConfig.compat.iaf.DE_FIRE_RESIST) ? "effect.fireResistance" : (element != Elements.NEUTRAL) ? "xat.effect." + element.getName().toLowerCase() + "_resistance" : "ability.block_detection.name"
+
+				).getFormattedText()
+		);
 		final KeyEntry TANHot = new LangEntry(this.getTranslationKey(stack), "heatimmune", tan && serverConfig.compat.tan.immuneToHeat);
 		final KeyEntry TANCold = new LangEntry(this.getTranslationKey(stack), "coldimmune", tan && serverConfig.compat.tan.immuneToHeat);
 		final KeyEntry IAFParalysis = new LangEntry(this.getTranslationKey(stack), "paralysisimmune", isLightningVariant && serverConfig.compat.iaf.LIGHTNING_VARIANT && serverConfig.compat.iaf.PARALYSIS_IMMUNITY);
 		final KeyEntry key3 = new OptionEntry("typeimmune", new TextComponentTranslation(isIceVariant ? TANCold.option() : isLightningVariant ? IAFParalysis.option() : TANHot.option()).getFormattedText());
 		final KeyEntry IAFFrostWalker = new LangEntry(this.getTranslationKey(stack) + ".compat.iaf.ice", "frostwalker", isIceVariant && serverConfig.compat.iaf.ICE_VARIANT && serverConfig.compat.iaf.FROST_WALKER);
 
-		return helper.formatAddVariables(translation, key, key1, keybind1, keybind2, key2, TANHot, TANCold, key3, IAFFrostWalker, IAFParalysis).replace("#underline:", "");
+		return helper.formatAddVariables(translation, key, key1, keybind1, keybind2, key2, TANHot, TANCold, key3, IAFFrostWalker, IAFParalysis)
+				.replace("#underline:", "");
 	}
 
 	@Override
@@ -130,10 +139,13 @@ public class TrinketDragonsEye extends AccessoryBase {
 	public void initAbilities(ItemStack stack, EntityLivingBase entity, List<IAbilityInterface> abilities) {
 		abilities.add(new AbilityNightVision().toggleAbility(true));
 		final Element element = this.getPrimaryElement(stack);
-		final boolean isIceVariant = element == Elements.ICE;
-		final boolean isLightningVariant = element == Elements.LIGHTNING;
 		final boolean tan = (Trinkets.ToughAsNails && TrinketsConfig.compat.toughasnails) || (Trinkets.SimpleDifficulty && TrinketsConfig.compat.simpledifficulty);
-		if (serverConfig.compat.iaf.ICE_VARIANT && isIceVariant) {
+		if (serverConfig.compat.iaf.FIRE_VARIANT && (element == Elements.FIRE)) {
+			abilities.add(new AbilityFireImmunity());
+			if (tan && serverConfig.compat.tan.immuneToHeat) {
+				abilities.add(new AbilityHeatImmunity());
+			}
+		} else if (serverConfig.compat.iaf.ICE_VARIANT && (element == Elements.ICE)) {
 			abilities.add(new AbilityIceImmunity());
 			if (serverConfig.compat.iaf.FROST_WALKER) {
 				abilities.add(new AbilityFrostWalker());
@@ -141,12 +153,14 @@ public class TrinketDragonsEye extends AccessoryBase {
 			if (tan && serverConfig.compat.tan.immuneToCold) {
 				abilities.add(new AbilityColdImmunity());
 			}
-		} else if (serverConfig.compat.iaf.LIGHTNING_VARIANT && isLightningVariant) {
+		} else if (serverConfig.compat.iaf.LIGHTNING_VARIANT && (element == Elements.LIGHTNING)) {
 			abilities.add(new AbilityLightningImmunity());
 		} else {
-			abilities.add(new AbilityFireImmunity());
-			if (tan && serverConfig.compat.tan.immuneToHeat) {
-				abilities.add(new AbilityHeatImmunity());
+			if (serverConfig.compat.iaf.DE_FIRE_RESIST) {
+				abilities.add(new AbilityFireImmunity());
+				if (tan && serverConfig.compat.tan.immuneToHeat) {
+					abilities.add(new AbilityHeatImmunity());
+				}
 			}
 		}
 		if (serverConfig.oreFinder) {
@@ -158,12 +172,8 @@ public class TrinketDragonsEye extends AccessoryBase {
 	public String getItemStackDisplayName(ItemStack stack) {
 		final Element element = this.getPrimaryElement(stack);
 		final String displayName;
-		if (element == Elements.ICE) {
-			displayName = new TextComponentTranslation(this.getTranslationKey(stack) + ".ice.name").getFormattedText();
-		} else if (element == Elements.LIGHTNING) {
-			displayName = new TextComponentTranslation(this.getTranslationKey(stack) + ".lightning.name").getFormattedText();
-		} else if (element == Elements.FIRE) {
-			displayName = new TextComponentTranslation(this.getTranslationKey(stack) + ".fire.name").getFormattedText();
+		if (element != Elements.NEUTRAL) {
+			displayName = new TextComponentTranslation(this.getTranslationKey(stack) + "." + element.getName().toLowerCase() + ".name").getFormattedText();
 		} else {
 			displayName = super.getItemStackDisplayName(stack);
 		}
@@ -186,10 +196,10 @@ public class TrinketDragonsEye extends AccessoryBase {
 		ModelBakery.registerItemVariants(this, normal, fireVariant, iceVariant, lightningVariant);
 		ModelLoader.setCustomMeshDefinition(this, stack -> {
 			final Element element = this.getPrimaryElement(stack);
-			if (element == Elements.ICE) {
-				return iceVariant;
-			} else if (element == Elements.LIGHTNING) {
+			if (element == Elements.LIGHTNING) {
 				return lightningVariant;
+			} else if (element == Elements.ICE) {
+				return iceVariant;
 			} else if (element == Elements.FIRE) {
 				return fireVariant;
 			} else {

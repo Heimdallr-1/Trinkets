@@ -108,7 +108,6 @@ public class OnWorldJoinHandler {
 	@SubscribeEvent
 	public void onPlayerChangedDimension(PlayerChangedDimensionEvent event) {
 		//		final EntityPlayer player = event.player;
-
 	}
 
 }

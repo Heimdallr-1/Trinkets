@@ -121,6 +121,12 @@ public class ClientConfig {
 			@LangKey(cfgPrefix + ".dragons_eye.orefinder.refresh.rate")
 			public int Render_Cooldown = 79;
 
+			@Config.Name("Max Particles")
+			@Config.Comment("Ore Finder Max Particle Count")
+			@RangeInt(min = 0)
+			@LangKey(cfgPrefix + ".dragons_eye.orefinder.particles")
+			public int Particles_Max = 255;
+
 			@Config.Name("Dragon's Growl")
 			@Config.Comment("When The Treasure Finder is Enabled, Should There be a Growl the Treasure Finder Pings Treasure")
 			@LangKey(cfgPrefix + ".dragons_eye.growl.enabled")

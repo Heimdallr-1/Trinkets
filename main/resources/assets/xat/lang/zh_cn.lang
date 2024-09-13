@@ -92,8 +92,8 @@ ability.water_affinity.tooltip1=@SurvivalThirst:
 ability.water_affinity.tooltip2=游泳增强
 ability.fall_resistance.name=摔落抵抗
 ability.fall_resistance.tooltip1=获得$fallResist:点摔落伤害抵抗
-//ability.nullify_kinetic.name=动能免疫
-//ability.nullify_kinetic.tooltip1=免疫摔落和动能伤害
+ability.nullify_kinetic.name=动能免疫
+ability.nullify_kinetic.tooltip1=免疫摔落和动能伤害
 ability.cold_immunity.name=§b寒冷免疫
 ability.cold_immunity.tooltip1=§6免疫寒冷和大多数冷源
 ability.heat_immunity.name=§c热量免疫
@@ -135,6 +135,9 @@ ability.heavy.tooltip2=§c践踏走过的耕地
 ability.safe_guard.name=§6安全守护
 ability.safe_guard.tooltip1=获得抗性提升
 ability.safe_guard.tooltip2=每受到伤害 $sohcount: 次免疫攻击
+
+ability.frost_walker.name=Frost Walker
+ability.ice_immunity.name=Ice Immunity
 
 ability.firstaid_reflex.name=快速反应
 ability.firstaid_reflex.tooltip1=概率免疫致命爆头伤害
@@ -614,12 +617,16 @@ xat.config.server.dragons_eye.toughasnails.immunity.heat.tooltip=If Tough as Nai
 
 xat.config.server.dragons_eye.iceandfire.recipe.stage=Skull Stage
 xat.config.server.dragons_eye.iceandfire.recipe.stage.tooltip=If Ice and Fire is Installed, Should the Dragon's Eye Require a Specific Stage of Skull for the recipe. Set to 0 for any stage
+xat.config.server.dragons_eye.iceandfire.fire.variant=Fire Variant
+xat.config.server.dragons_eye.iceandfire.fire.variant.tooltip=Should there be an Fire Variant of the Dragons eye
 xat.config.server.dragons_eye.iceandfire.ice.variant=Ice Variant
 xat.config.server.dragons_eye.iceandfire.ice.variant.tooltip=Should there be an Ice Variant of the Dragons eye
 xat.config.server.dragons_eye.iceandfire.ice.frostwalker=Frost Walker
 xat.config.server.dragons_eye.iceandfire.ice.frostwalker.tooltip=Should the Ice Variant have Frost Walker
 xat.config.server.dragons_eye.iceandfire.lightning.paralysis.variant=Paralysis Immunity
 xat.config.server.dragons_eye.iceandfire.lightning.paralysis.tooltip=Should the Ice Variant have Paralysis Immunity
+xat.config.server.dragons_eye.iceandfire.default.resist=Default Resist
+xat.config.server.dragons_eye.iceandfire.default.resist.tooltip=Should the Base Dragons Eye have Fire Resistance
 
 xat.config.client.dragons_eye.growl.enabled=Dragon's Growl
 xat.config.client.dragons_eye.growl.enabled.tooltip=When The Treasure Finder is Enabled, Should There be a Growl the Treasure Finder Pings Treasure
@@ -629,6 +636,8 @@ xat.config.client.dragons_eye.growl.volume=Dragon's Growl Volume
 xat.config.client.dragons_eye.growl.volume.tooltip=Dragon's Growl Volume Control
 xat.config.client.dragons_eye.orefinder.refresh.rate=Refresh Rate
 xat.config.client.dragons_eye.orefinder.refresh.rate.tooltip=Determines of Often the Treasure Finder Pings for Treasure
+xat.config.client.dragons_eye.orefinder.particles=Max Particles
+xat.config.client.dragons_eye.orefinder.particles.tooltip=Ore Finder Max Particle Count
 
 xat.config.ender_tiara=Ender Queen's Crown Settings
 xat.config.ender_tiara.tooltip=

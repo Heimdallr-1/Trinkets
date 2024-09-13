@@ -30,7 +30,7 @@ public class AbilityIceImmunity extends Ability implements ITickableAbility, IPo
 		}
 		if (ice_resist != null) {
 			if (!entity.isPotionActive(ice_resist)) {
-				entity.addPotionEffect(new PotionEffect(ice_resist, 60, 0, false, false));
+				entity.addPotionEffect(new PotionEffect(ice_resist, 400, 0, false, false));
 			}
 			if (entity.world.isRemote) {
 				if (entity.isPotionActive(ice_resist)) {

@@ -34,8 +34,6 @@ public class CommandMain extends CommandBase {
 
 	private final String warn_notPlayerAdmin = "You do not have permission, or are not a player ingame!";
 	private final String warn_invalidArgs = "Invalid Arguments";
-	private final String warn_noItem = "Not holding an item!";
-	private final String exportJsonReminder = "(Don't forget to exportJson !)";
 
 	@Override
 	public List<String> getAliases() {
@@ -54,7 +52,7 @@ public class CommandMain extends CommandBase {
 
 	@Override
 	public String getUsage(ICommandSender sender) {
-		return "/xat <PLAYER>";
+		return "/xat <PLAYER> <Mana | Race> <ARG>";
 	}
 
 	@Override

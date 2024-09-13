@@ -38,14 +38,26 @@ public class RaceDragon extends EntityRacePropertiesHandler {
 		this.addAbility(new AbilityNightVision().toggleAbility(true));
 
 		// Elemental Features
-		//		if (this.getEntityProperties().getElementalAttributes().getPrimaryElement() == Elements.ICE) {
+		//		if (this.getEntityProperties().getElementalAttributes().getPrimaryElement() == Elements.FIRE) {
+		//			if (serverConfig.breath_damage > 0) {
+		//				this.addAbility(new AbilityFireBreathing());
+		//			}
+		//			if ((Trinkets.ToughAsNails || Trinkets.SimpleDifficulty) && serverConfig.compat.tan.immuneToHeat) {
+		//				this.addAbility(new AbilityHeatImmunity());
+		//			}
+		//			this.addAbility(new AbilityFireImmunity());
+		//		} else if (this.getEntityProperties().getElementalAttributes().getPrimaryElement() == Elements.ICE) {
 		//			this.addAbility(new AbilityIceImmunity());
+		//			if (TrinketsConfig.SERVER.Items.DRAGON_EYE.compat.iaf.FROST_WALKER) {
+		//				this.addAbility(new AbilityFrostWalker());
+		//			}
 		//			if ((Trinkets.ToughAsNails || Trinkets.SimpleDifficulty) && serverConfig.compat.tan.immuneToCold) {
 		//				this.addAbility(new AbilityColdImmunity());
 		//			}
 		//		} else if (this.getEntityProperties().getElementalAttributes().getPrimaryElement() == Elements.LIGHTNING) {
 		//			this.addAbility(new AbilityLightningImmunity());
 		//		} else {
+		//			if (TrinketsConfig.SERVER.Items.DRAGON_EYE.compat.iaf.DE_FIRE_RESIST) {
 		if (serverConfig.breath_damage > 0) {
 			this.addAbility(new AbilityFireBreathing());
 		}
@@ -53,6 +65,7 @@ public class RaceDragon extends EntityRacePropertiesHandler {
 			this.addAbility(new AbilityHeatImmunity());
 		}
 		this.addAbility(new AbilityFireImmunity());
+		//			}
 		//		}
 
 		// Other Abilities

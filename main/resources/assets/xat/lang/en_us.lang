@@ -135,6 +135,9 @@ ability.safe_guard.name=§6Safe Guard
 ability.safe_guard.tooltip1=Gains the Resistance Potion Effect
 ability.safe_guard.tooltip2=Can Ignore Damage every $sohcount: Hits
 
+ability.frost_walker.name=Frost Walker
+ability.ice_immunity.name=Ice Immunity
+
 ability.firstaid_reflex.name=Fast Reflexes
 ability.firstaid_reflex.tooltip1=Chance to Ignore Fatal Headshots
 
@@ -612,6 +615,8 @@ xat.config.server.dragons_eye.toughasnails.immunity.heat.tooltip=If Tough as Nai
 
 xat.config.server.dragons_eye.iceandfire.recipe.stage=Skull Stage
 xat.config.server.dragons_eye.iceandfire.recipe.stage.tooltip=If Ice and Fire is Installed, Should the Dragon's Eye Require a Specific Stage of Skull for the recipe. Set to 0 for any stage
+xat.config.server.dragons_eye.iceandfire.fire.variant=Fire Variant
+xat.config.server.dragons_eye.iceandfire.fire.variant.tooltip=Should there be an Fire Variant of the Dragons eye
 xat.config.server.dragons_eye.iceandfire.ice.variant=Ice Variant
 xat.config.server.dragons_eye.iceandfire.ice.variant.tooltip=Should there be an Ice Variant of the Dragons eye
 xat.config.server.dragons_eye.iceandfire.ice.frostwalker=Frost Walker
@@ -620,6 +625,8 @@ xat.config.server.dragons_eye.iceandfire.lightning.variant=Lightning Variant
 xat.config.server.dragons_eye.iceandfire.lightning.variant.tooltip=Should there be a Lightning Variant of the Dragons eye
 xat.config.server.dragons_eye.iceandfire.lightning.paralysis=Paralysis Immunity
 xat.config.server.dragons_eye.iceandfire.lightning.paralysis.tooltip=Should the Lightning Variant have Paralysis Immunity
+xat.config.server.dragons_eye.iceandfire.default.resist=Default Resist
+xat.config.server.dragons_eye.iceandfire.default.resist.tooltip=Should the Base Dragons Eye have Fire Resistance
 
 xat.config.client.dragons_eye.growl.enabled=Dragon's Growl
 xat.config.client.dragons_eye.growl.enabled.tooltip=When The Treasure Finder is Enabled, Should There be a Growl the Treasure Finder Pings Treasure
@@ -629,6 +636,8 @@ xat.config.client.dragons_eye.growl.volume=Dragon's Growl Volume
 xat.config.client.dragons_eye.growl.volume.tooltip=Dragon's Growl Volume Control
 xat.config.client.dragons_eye.orefinder.refresh.rate=Refresh Rate
 xat.config.client.dragons_eye.orefinder.refresh.rate.tooltip=Determines of Often the Treasure Finder Pings for Treasure
+xat.config.client.dragons_eye.orefinder.particles=Max Particles
+xat.config.client.dragons_eye.orefinder.particles.tooltip=Ore Finder Max Particle Count
 
 xat.config.ender_tiara=Ender Queen's Crown Settings
 xat.config.ender_tiara.tooltip=

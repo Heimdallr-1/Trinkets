@@ -141,11 +141,16 @@ public class AbilityBlockFinder extends Ability implements ITickableAbility, ITo
 					this.SpawnParticle(entity.getEntityWorld(), first.getValue(), treasure.getColor());
 				}
 			} else {
-				collection.forEach((dist, pos) -> {
-					for (int p1 = 0; p1 < 3; p1++) {
-						this.SpawnParticle(entity.getEntityWorld(), pos, treasure.getColor());
+				int particleCount = 0;
+				for (Entry<Double, Vec3d> e : collection.entrySet()) {
+					if (particleCount >= clientConfig.Particles_Max) {
+						break;
 					}
-				});
+					for (int p1 = 0; p1 < 3; p1++) {
+						this.SpawnParticle(entity.getEntityWorld(), e.getValue(), treasure.getColor());
+						particleCount++;
+					}
+				}
 			}
 		}
 	}

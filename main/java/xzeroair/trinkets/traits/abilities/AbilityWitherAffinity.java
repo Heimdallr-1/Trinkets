@@ -4,6 +4,7 @@ import java.util.Random;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.MobEffects;
+import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.DamageSource;
 import xzeroair.trinkets.init.Abilities;
@@ -22,8 +23,9 @@ public class AbilityWitherAffinity extends Ability implements IAttackAbility, IP
 
 	@Override
 	public boolean attacked(EntityLivingBase attacked, DamageSource source, float dmg, boolean cancel) {
-		if (source.equals(DamageSource.WITHER))
+		if (source.equals(DamageSource.WITHER)) {
 			return true;
+		}
 		return cancel;
 	}
 
@@ -55,8 +57,12 @@ public class AbilityWitherAffinity extends Ability implements IAttackAbility, IP
 	@Override
 	public boolean potionApplied(EntityLivingBase entity, PotionEffect effect, boolean cancel) {
 		final String e = effect.getPotion().getRegistryName().toString();
-		if (e.contentEquals("minecraft:wither") || e.contentEquals("minecraft:nausea"))
-			return true;
+		for (final String immunity : TrinketsConfig.SERVER.Items.WITHER_RING.immunities) {
+			final Potion pot = Potion.getPotionFromResourceLocation(immunity);
+			if ((pot != null) && e.contentEquals(pot.getRegistryName().toString())) {
+				return true;
+			}
+		}
 		return cancel;
 	}
 

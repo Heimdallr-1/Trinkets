@@ -20,7 +20,6 @@ import xzeroair.trinkets.api.TrinketHelper.SlotInformation.ItemHandlerType;
 import xzeroair.trinkets.capabilities.Capabilities;
 import xzeroair.trinkets.capabilities.CapabilityBase;
 import xzeroair.trinkets.capabilities.race.ElementalAttributes;
-import xzeroair.trinkets.items.trinkets.TrinketTeddyBear;
 import xzeroair.trinkets.network.NetworkHandler;
 import xzeroair.trinkets.network.SyncItemDataPacket;
 import xzeroair.trinkets.traits.abilities.base.ItemAbilityProvider;
@@ -124,9 +123,9 @@ public class TrinketProperties extends CapabilityBase<TrinketProperties, ItemSta
 	}
 
 	public void onUpdate(ItemStack stack, World world, Entity entity, int itemSlot, boolean isSelected) {
-		if (stack.getItem() instanceof TrinketTeddyBear) {
-			//			System.out.println(stack.hasDisplayName() + " | " + stack.getDisplayName());
-		}
+		//		if (stack.getItem() instanceof TrinketTeddyBear) {
+		//			System.out.println(stack.hasDisplayName() + " | " + stack.getDisplayName());
+		//		}
 		if (entity instanceof EntityLivingBase) {
 			//TODO Recheck this, It's showing slot index 9 as Inventory instead of hotbar
 			final boolean onHotBar = !isSelected && (entity instanceof EntityPlayer) && InventoryPlayer.isHotbar(itemSlot);

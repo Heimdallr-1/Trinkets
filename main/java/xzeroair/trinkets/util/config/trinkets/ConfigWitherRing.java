@@ -37,6 +37,14 @@ public class ConfigWitherRing {
 	@LangKey(PREFIX + ".wither.duration")
 	public int wither_duration = 40;
 
+	@Config.Comment("Which effects to prevent")
+	@Name("81. Immunities")
+	@LangKey("xat.config.immunities.potions")
+	public String[] immunities = new String[] {
+			"minecraft:wither",
+			"minecraft:nausea"
+	};
+
 	@Config.RequiresMcRestart
 	@Config.Comment("Should this Item Be Registered")
 	@Name("98. Item Enabled")

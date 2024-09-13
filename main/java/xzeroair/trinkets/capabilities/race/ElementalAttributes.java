@@ -13,11 +13,13 @@ public class ElementalAttributes {
 
 	protected Element primary;
 	protected Element secondary;
+	protected Element temporary;
 	protected Map<ResourceLocation, Element> subElements;
 
 	public ElementalAttributes() {
 		primary = Elements.NEUTRAL;
 		secondary = Elements.NEUTRAL;
+		temporary = Elements.NEUTRAL;
 		subElements = new TreeMap<>();
 	}
 
@@ -31,6 +33,13 @@ public class ElementalAttributes {
 	public ElementalAttributes setSecendaryElement(Element element) {
 		if ((element != null) && (element != secondary)) {
 			secondary = element;
+		}
+		return this;
+	}
+
+	public ElementalAttributes setTemporaryElement(Element element) {
+		if ((element != null) && (element != temporary)) {
+			temporary = element;
 		}
 		return this;
 	}
@@ -58,6 +67,10 @@ public class ElementalAttributes {
 
 	public Element getSecondaryElement() {
 		return secondary;
+	}
+
+	public Element getTemporaryElement() {
+		return temporary;
 	}
 
 	public Map<ResourceLocation, Element> getSubElements() {

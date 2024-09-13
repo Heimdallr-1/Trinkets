@@ -5,6 +5,7 @@ import net.minecraft.client.network.NetHandlerPlayClient;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.network.NetHandlerPlayServer;
+import net.minecraft.world.World;
 import net.minecraftforge.fml.common.network.ByteBufUtils;
 import xzeroair.trinkets.Trinkets;
 import xzeroair.trinkets.capabilities.Capabilities;
@@ -65,7 +66,8 @@ public class KeybindPacket extends ThreadSafePacket {
 
 	@Override
 	public void handleServerSafe(NetHandlerPlayServer server) {
-		final Entity entity = server.player.getEntityWorld().getEntityByID(entityID);
+		final World world = server.player.getEntityWorld();
+		final Entity entity = world.getEntityByID(entityID);
 		Capabilities.getEntityProperties(entity, prop -> {
 			try {
 				final IAbilityInterface kbAbility = prop.getAbilityHandler().getAbility(ability);

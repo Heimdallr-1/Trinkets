@@ -60,11 +60,11 @@ public class RecipeDragonEye extends ShapedOreRecipe {
 					if (this.matchItem(stack, "iceandfire:dragon_skull")) {
 						int meta = stack.getMetadata();
 						if (meta == 1) {
-							this.setTrinketProperties(output, 1, Elements.ICE);
+							this.setTrinketProperties(output, 2, Elements.ICE);
 						} else if (meta == 2) {
-							this.setTrinketProperties(output, 2, Elements.LIGHTNING);
+							this.setTrinketProperties(output, 3, Elements.LIGHTNING);
 						} else {
-							this.setTrinketProperties(output, 0, Elements.FIRE);
+							this.setTrinketProperties(output, 1, Elements.FIRE);
 						}
 						checkSkull = true;
 					}
@@ -93,14 +93,14 @@ public class RecipeDragonEye extends ShapedOreRecipe {
 					if (this.matchDragonSkullStage(stack)) {
 						if (stack.getItemDamage() == 1) {
 							if (TrinketsConfig.SERVER.Items.DRAGON_EYE.compat.iaf.ICE_VARIANT) {
-								this.setTrinketProperties(output, 1, Elements.ICE);
+								this.setTrinketProperties(output, 2, Elements.ICE);
 							}
 						} else if (stack.getItemDamage() == 2) {
 							if (TrinketsConfig.SERVER.Items.DRAGON_EYE.compat.iaf.LIGHTNING_VARIANT) {
-								this.setTrinketProperties(output, 2, Elements.LIGHTNING);
+								this.setTrinketProperties(output, 3, Elements.LIGHTNING);
 							}
 						} else {
-							this.setTrinketProperties(output, 0, Elements.FIRE);
+							this.setTrinketProperties(output, 1, Elements.FIRE);
 						}
 					}
 				}
