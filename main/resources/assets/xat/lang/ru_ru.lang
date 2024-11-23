@@ -1,4 +1,3 @@
-{
 //Translated by Heimdallr-1
 itemGroup.trinketstab=Trinkets
 xat.config.title=Trinkets & Baubles
@@ -10,7 +9,7 @@ xat.exampletext.3=3 текста совместимости для каждог�
 xat.exampletext.4=item.item.glow_ring.0.compat.tan=Для Tough as Nails
 xat.exampletext.5=item.item.glow_ring.0.compat.firstaid=Для First Aid
 xat.exampletext.6=item.item.glow_ring.0.compat.enhancedvisuals=Для EnhancedVisuals
-xat.exampletext.end=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+xat.exampletext.end=~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 xat.holdshift=<Удерживайте Shift>
 xat.holdctrl=<Удерживайте Ctrl>
@@ -44,12 +43,12 @@ key.xat.aux_key.desc=Вспомогательная клавиша
 key.xat.trinket_gui.desc=Графический интерфейс Trinkets
 
 key.xat.trinket_arcing_attack.desc=Искрящая сфера: Атака
-key.xat.race_ability.desc=Способность бега
+key.xat.race_ability.desc=Способность расы
 
 gui.xat.button.open=Открыть
 gui.xat.button.close=Закрыть
 
-attribute.name.xat.entityRace=Зачарованный бег
+attribute.name.xat.entityRace=Зачарованная раса
 
 entity.AlphaWolf.name=Король волк
 
@@ -99,8 +98,8 @@ ability.cold_immunity.name=§bХолодостойкость
 ability.cold_immunity.tooltip1=§6Устойчивость к холоду и большинству холодных источников.
 ability.heat_immunity.name=§cТеплостойкость
 ability.heat_immunity.tooltip1=§6Устойчивость к Теплу и большинству горячих источников.
-ability.thirst_immunity.name=Устойчивость к жаждующему отравлению
-ability.thirst_immunity.tooltip1=Устойчивость к Жаждующему отравлению.
+ability.thirst_immunity.name=Устойчивость к Жаждущему отравлению.
+ability.thirst_immunity.tooltip1=Устойчивость к Жаждущему отравлению.
 ability.parasites_immunity.name=Устойчивость к паразитам
 ability.parasites_immunity.tooltip1=Устойчивость к Паразитам от питья.
 ability.ender_queen.name=§5Эндер-величие
@@ -155,7 +154,7 @@ attribute.name.xat.stepheight=Высокая поступь
 attribute.name.xat.entityMagic.maxMana=Макс. мана
 attribute.name.xat.entityMagic.regen=Регенерация МО
 
-####################################Materials####################################
+###Materials###
 
 item.glowing_powder.name=Пылающая пыль
 item.glowing_powder.tooltip1=Материал для создания 1-го уровня.
@@ -175,13 +174,13 @@ item.mana_reagent.name=§6Мана-реагент
 item.mana_reagent.tooltip1=§cВредит при употреблении.
 item.mana_reagent.tooltip2=§c-§b$mpmax:§c Макс. мана
 
-item.restoration_serum.name=§6Ремонтная сыворотка
+item.restoration_serum.name=§6Сыворотка восстановления
 item.restoration_serum.tooltip1=Обращает постоянные эффекты трансформации.
 item.restoration_serum.tooltip2=§cВредит при употреблении.
 
-####################################Materials End####################################
+###Materials End###
 
-####################################Trinkets####################################
+###Trinkets###
 
 item.glow_ring.0.name=§6Кольцо волшебных глаз
 item.glow_ring.0.tooltip1=§2Даёт ночное зрение.
@@ -206,7 +205,7 @@ item.fairy_ring.0.tooltip1=§6Размер существа на $rsize: от о
 item.fairy_ring.0.tooltip2=@creativeflight:
 item.fairy_ring.0.creativeflight=§6Даёт творческий полёт.
 
-item.faelis_ring.0.name=§6Кольцо Faeles
+item.faelis_ring.0.name=§6Кольцо Фаэлиса
 item.faelis_ring.0.tooltip1=§6Размер существа на $rsize: от обычного.
 item.faelis_ring.0.tooltip2=§aПовышенный урон голыми руками.
 item.faelis_ring.0.tooltip3=§aПолучение усиления при употреблении молока.
@@ -214,22 +213,22 @@ item.faelis_ring.0.tooltip4=§cШтраф к скорости передвиже
 
 item.goblin_ring.0.name=§6Кольцо гоблинов
 item.goblin_ring.0.tooltip1=§6Размер существа на $rsize: от обычного.
-item.goblin_ring.0.tooltip2=§6Можно оселать прирученных волков.
+item.goblin_ring.0.tooltip2=§6Позволяет оседлать прирученных волков.
 item.goblin_ring.0.tooltip3=§6Даёт повышенную Силу и Регенерацию при оседлании волков.
 item.goblin_ring.0.tooltip4=§aНезначительное сопротивлению взрыву и огню.
-item.goblin_ring.0.tooltip5=§aКриперы не будут обращать на Вас внимание.
+item.goblin_ring.0.tooltip5=§aКриперы не будут обращать на Вас внимания.
 
 item.titan_ring.0.name=§6Кольцо титанов
 item.titan_ring.0.tooltip1=§6Размер существа на $rsize: от обычного.
 item.titan_ring.0.tooltip2=§6Даёт область копки 3х3х3.
 item.titan_ring.0.tooltip3=§c@heavy:
-item.titan_ring.0.tooltip4=§cВытаптываете растения.
-item.titan_ring.0.heavy=§cТоните в воде.
+item.titan_ring.0.tooltip4=§cВытаптывает растения.
+item.titan_ring.0.heavy=§cТонет в воде.
 
 item.dragon_ring.0.name=§6Кольцо драконов
 item.dragon_ring.0.tooltip1=§6Размер существа на $rsize: от обычного.
-item.dragon_ring.0.tooltip2=§6Нажатие §r<§e*breathkb:§r>§6 — изрыгнуть пламенем.
-item.dragon_ring.0.tooltip3=§6Даёт огнестойкость
+item.dragon_ring.0.tooltip2=§6Нажатие §r<§e*breathkb:§r> — §6изрыгнуть пламенем.
+item.dragon_ring.0.tooltip3=§6Даёт огнестойкость.
 item.dragon_ring.0.tooltip4=§2Даёт ночное видение §r<§e*denvkb:§r>
 
 item.teddy_bear.0.name=Плюшевый мишка
@@ -252,7 +251,7 @@ item.greater_inertia_stone.0.tooltip1=§3$greaterinertiafd:§r§6 Сопроти
 item.sea_stone.0.name=Камень моря
 item.sea_stone.0.tooltip1=@bubbles:
 item.sea_stone.0.tooltip2=@betterswimming:
-item.sea_stone.0.bubbles=§6Бесконечный кислород при §r[§3$bubbles:§r]§6 пызурьков.
+item.sea_stone.0.bubbles=§6Бесконечный кислород при §r[§3$bubbles:§r]§6 пузырьков.
 item.sea_stone.0.betterswimming=§2Улучшенное плавание.
 item.sea_stone.0.compat.tan=@tanthirst:
 item.sea_stone.0.tanthirst=§6Устойчивость к Жажде.
@@ -278,14 +277,14 @@ item.dragons_eye.0.tooltip3=@treasurefinder:
 item.dragons_eye.0.tooltip4=@frostwalker:
 item.dragons_eye.0.treasurefinder=§6Текущая цель: §3#underline:$target:§r <§e*deofkb:§r>
 
-item.dragons_eye.0.treasurefinder.on=§6Для моей Сокровищнице мне нужно больше §f $target:§6 $looking:
+item.dragons_eye.0.treasurefinder.on=§6Для моей Сокровищницы мне нужно больше §f $target:§6 $looking:
 item.dragons_eye.0.treasurefinder.notfound=§6Не уверен, что на данный момент мне нужна Сокровищница. §c(Предмет не найден, возвращение к $target:)
-item.dragons_eye.0.treasurefinder.off=Полагаю, что моя Сокровищника вполне заполнена $looking:
+item.dragons_eye.0.treasurefinder.off=Полагаю, что моя Сокровищница вполне заполнена $looking:
 item.dragons_eye.0.compat.tan=$typeimmune:
 item.dragons_eye.0.heatimmune=§6Устойчивость к гипертермии.
 item.dragons_eye.0.coldimmune=§6Устойчивость к гипотермии.
 item.dragons_eye.0.paralysisimmune=§6Устойчивость к параличу.
-item.dragons_eye.0.compat.iaf.ice.frostwalker=§6Даёт §3Ледоход
+item.dragons_eye.0.compat.iaf.ice.frostwalker=§6Даёт §3Ледоход.
 
 item.poison_stone.0.name=Ядовитый камень
 item.poison_stone.0.tooltip1=§6Устойчивость к Отравлению.
@@ -324,65 +323,65 @@ item.damage_shield.0.explosionresist=§3$explosionresistamount: §6Сопрот�
 item.damage_shield.0.damageignored=§6Каждые §3$cfghitcount: §6ударов игнорировать будущую атаку.
 //item.damage_shield.0.damageignored=§6Игнорирует урона: §3$damageignoredhitcount:/$cfghitcount:
 item.damage_shield.0.compat.firstaid=@headshots:
-item.damage_shield.0.headshots=§3$headshotchance:§6 Chance to ignore headshot
-item.damage_shield.0.compat.enhancedvisuals=Disables explosion blur
+item.damage_shield.0.headshots=§3$headshotchance:§6 Шанс игнорировать выстрел в голову.
+item.damage_shield.0.compat.enhancedvisuals=Отключает затемнение от взрыва.
 
 item.arcing_orb.0.name=Искрящая сфера
 item.arcing_orb.0.tooltip1=@dodge:
 item.arcing_orb.0.tooltip2=@dodge.stun:
-item.arcing_orb.0.tooltip3=§6Hold §r<§e*arckb:§r>§6 to cast a bolt attack §3$boltcost:MP
-item.arcing_orb.0.tooltip4=§3$boltdamage:§6 damage based on MP spent
-item.arcing_orb.0.dodge=§2Grants double tap dodge ability
-item.arcing_orb.0.dodge.stun=§6Stun nearby enemies on dodge §3$dodgecost:MP
+item.arcing_orb.0.tooltip3=§6Удерживание §r<§e*arckb:§r>§6 для исполнения атакой молнией §3$boltcost:МО
+item.arcing_orb.0.tooltip4=§3$boltdamage:§6 урона в зависимости от постраченных МО.
+item.arcing_orb.0.dodge=§2Даёт способность уклонения при двойном нажатии.
+item.arcing_orb.0.dodge.stun=§6Оглушает близлежащих врагов при уклонении §3$dodgecost:МО
 
-item.faelis_claw.0.name=Faelis Claw
-item.faelis_claw.0.tooltip1=§6Attacking enemies causes them to bleed
-item.faelis_claw.0.tooltip2=§aBleeding causes 1 damage every 20 ticks for $clawbleed: ticks
-item.faelis_claw.0.tooltip3=§cDuration reduced to 1/3 when used by Non-Faeles
+item.faelis_claw.0.name=Коготь Фаэлиса
+item.faelis_claw.0.tooltip1=§6Заставляет атакованных врагов кровоточить.
+item.faelis_claw.0.tooltip2=§aКровотечение наносит 1 урон каждые 20 тактов в течение $clawbleed: тактов.
+item.faelis_claw.0.tooltip3=§cСрок действия снижается на 1/3, если не используется на Фаэлисе.
 
-####################################Trinkets End####################################
+###Trinkets End###
 
-####################################Food####################################
+###Food###
 
-item.dwarf_stout.name=Dwarf Stout
-item.dwarf_stout.tooltip1=§bI might be able to remove the effects
-item.dwarf_stout.tooltip2=§bby drinking some sort of potion
-item.dwarf_stout.tooltip3=<§9Use a Restoration Serum to undo§r>
+item.dwarf_stout.name=Крепкий портер Гномов
+item.dwarf_stout.tooltip1=§bВыпив некое зелье,
+item.dwarf_stout.tooltip2=§bя смогу снять эффекты.
+item.dwarf_stout.tooltip3=<§9Для отмены используйте Сыворотку восстановления§r>
 
-item.fairy_dew.name=Fairy Dew
-item.fairy_dew.tooltip1=§bI might be able to remove the effects
-item.fairy_dew.tooltip2=§bby drinking some sort of potion
-item.fairy_dew.tooltip3=<§9Use a Restoration Serum to undo§r>
+item.fairy_dew.name=Роса феи
+item.fairy_dew.tooltip1=§bВыпив некое зелье,
+item.fairy_dew.tooltip2=§bя смогу снять эффекты.
+item.fairy_dew.tooltip3=<§9Для отмены используйте Сыворотку восстановления§r>
 
-item.titan_spirit.name=Titan's Spirit
-item.titan_spirit.tooltip1=§bI might be able to remove the effects
-item.titan_spirit.tooltip2=§bby drinking some sort of potion
-item.titan_spirit.tooltip3=<§9Use a Restoration Serum to undo§r>
+item.titan_spirit.name=Душа титана
+item.titan_spirit.tooltip1=§bВыпив некое зелье,
+item.titan_spirit.tooltip2=§bя смогу снять эффекты.
+item.titan_spirit.tooltip3=<§9Для отмены используйте Сыворотку восстановления§r>
 
-item.elf_sap.name=Elf Sap
-item.elf_sap.tooltip1=§bI might be able to remove the effects
-item.elf_sap.tooltip2=§bby drinking some sort of potion
-item.elf_sap.tooltip3=<§9Use a Restoration Serum to undo§r>
+item.elf_sap.name=Живица эльфа
+item.elf_sap.tooltip1=§bВыпив некое зелье,
+item.elf_sap.tooltip2=§bя смогу снять эффекты.
+item.elf_sap.tooltip3=<§9Для отмены используйте Сыворотку восстановления§r>
 
-item.goblin_soup.name=Goblin Soup
-item.goblin_soup.tooltip1=§bI might be able to remove the effects
-item.goblin_soup.tooltip2=§bby drinking some sort of potion
-item.goblin_soup.tooltip3=<§9Use a Restoration Serum to undo§r>
+item.goblin_soup.name=Суп гоблина
+item.goblin_soup.tooltip1=§bВыпив некое зелье,
+item.goblin_soup.tooltip2=§bя смогу снять эффекты.
+item.goblin_soup.tooltip3=<§9Для отмены используйте Сыворотку восстановления§r>
 
-item.faelis_food.name=Faelis Nip
-item.faelis_food.tooltip1=§bI might be able to remove the effects
-item.faelis_food.tooltip2=§bby drinking some sort of potion
-item.faelis_food.tooltip3=<§9Use a Restoration Serum to undo§r>
+item.faelis_food.name=Котовник Фаэлиса
+item.faelis_food.tooltip1=§bВыпив некое зелье,
+item.faelis_food.tooltip2=§bя смогу снять эффекты.
+item.faelis_food.tooltip3=<§9Для отмены используйте Сыворотку восстановления§r>
 
-item.dragon_gem.name=Dragon Gem
-item.dragon_gem.tooltip1=§bI might be able to remove the effects
-item.dragon_gem.tooltip2=§bby drinking some sort of potion
-item.dragon_gem.tooltip3=<§9Use a Restoration Serum to undo§r>
+item.dragon_gem.name=Камень дракона
+item.dragon_gem.tooltip1=§bВыпив некое зелье,
+item.dragon_gem.tooltip2=§bя смогу снять эффекты.
+item.dragon_gem.tooltip3=<§9Для отмены используйте Сыворотку восстановления§r>
 
-####################################Food End####################################
+###Food End###
 
 
-####################################Potions####################################
+###Potions###
 
 potion.effect.xat.sparkling=Sparkling Potion
 splash_potion.effect.xat.sparkling=Sparkling Splash Potion
@@ -485,17 +484,17 @@ tipped_arrow.effect.xat.dragon=Tipped Arrow of Dragon Transformation
 xat.effect.dragon=Dragon
 xat.item.potion.dragon.tooltip1=Become a Dragon for $dragonticks: seconds
 
-####################################Potions End####################################
+###Potions End###
 
-####################################Blocks####################################
+###Blocks###
 
 tile.moon_rose.name=Moon Rose
 tile.moon_rose.tooltip1=§bEnchanted Flower
 tile.moon_rose.tooltip2=§b<You can feel strong magical fluctuations coming from this>
 
-####################################Blocks End####################################
+###Blocks End###
 
-########################################Client Settings##########################################
+###Client Settings###
 
 xat.config.client.settings=Client Settings
 xat.config.client.settings.tooltip=Settings with only visual effects.
@@ -535,7 +534,7 @@ xat.config.client.render.entity.renderer.replace.fog.tooltip=When the Trinket an
 xat.config.client.race.properties.gui.settings=Race Properties Gui
 xat.config.client.race.properties.gui.shown=Race Properties Button
 
-#####################################[Food Configs]#####################################
+####[Food Configs]####
 
 xat.config.server.food.settings=Magic Food Settings
 xat.config.server.food.settings.tooltip=Settings regarding the transformation foods.
@@ -547,9 +546,9 @@ xat.config.server.food.transformation.effect.tooltip=Whether magical foods shoul
 xat.config.server.food.transformation.effect.keep=Keep Effect
 xat.config.server.food.transformation.effect.keep.tooltip=Whether the player should keep race transformations after death or not.
 
-#####################################[Food Configs End]#####################################
+####[Food Configs End]####
 
-#####################################[Potion Configs]#####################################
+####[Potion Configs]####
 
 xat.config.server.potion.registry.enabled=Potions Enabled
 xat.config.server.potion.registry.enabled.tooltip=Should Trinkets & Baubles Potions Be Added to the Registry on Load
@@ -584,9 +583,9 @@ xat.config.server.potion.human.tooltip=
 xat.config.server.potion.playersonly=Potions work on Players only
 xat.config.server.potion.playersonly.tooltip=Whether the transformation potions should only work on players or if they should work on all mobs. Transformation potions are buggy when used on non-player mobs.
 
-#####################################[Potion Configs End]#####################################
+####[Potion Configs End]####
 
-#####################################[Item Configs]#####################################
+####[Item Configs]####
 
 xat.config.items=Item Settings
 xat.config.items.transformation=Transformation Items
@@ -672,54 +671,54 @@ xat.config.server.ender_tiara.endermen.teleport.tooltip=Can Endermen Teleport
 xat.config.server.ender_tiara.toughasnails.immunity.cold=Immune to Cold
 xat.config.server.ender_tiara.toughasnails.immunity.cold.tooltip=If Tough as Nails is Installed Should the player be Immune to Cold
 
-xat.config.dwarf_ring=Ring of the Dwarves Settings
+xat.config.dwarf_ring=Настройки для Кольца гномов
 xat.config.dwarf_ring.tooltip=
 
-xat.config.elf_ring=Ring of the Elves Settings
+xat.config.elf_ring=Настройки для Кольца Эльвис
 xat.config.elf_ring.tooltip=
 
-xat.config.fairy_ring=Ring of the Fairies Settings
+xat.config.fairy_ring=Настройки для Кольца фей
 xat.config.fairy_ring.tooltip=
 
-xat.config.faelis_ring=Ring of the Faeles Settings
+xat.config.faelis_ring=Настройки для Кольца Фаэлиса
 xat.config.faelis_ring.tooltip=
 
-xat.config.goblin_ring=Ring of the Goblins Settings
+xat.config.goblin_ring=Настройки для Кольца гоблинов
 xat.config.goblin_ring.tooltip=
 
-xat.config.titan_ring=Ring of the Titans Settings
+xat.config.titan_ring=Настройки для Кольца титанов
 xat.config.titan_ring.tooltip=
 
-xat.config.dragon_ring=Ring of the Dragons Settings
+xat.config.dragon_ring=Настройки для Кольца дракона
 xat.config.dragon_ring.tooltip=
 
-xat.config.damage_shield=Shield of Honor Settings
+xat.config.damage_shield=Настройки для Щита чести
 xat.config.damage_shield.tooltip=
 
-xat.config.server.damage_shield.ignore.damage=Ignore Damage
+xat.config.server.damage_shield.ignore.damage=Игнорирование урона
 xat.config.server.damage_shield.ignore.damage.tooltip=While Enabled, every X Hits, Nullify the Next Incoming Attack
-xat.config.server.damage_shield.ignore.damage.hits=Required Hits
+xat.config.server.damage_shield.ignore.damage.hits=Требования к ударам
 xat.config.server.damage_shield.ignore.damage.hits.tooltip=How many Hits before the Next Attack is Ignored
-xat.config.server.damage_shield.explosion.resist=Explosion Resistance
-xat.config.server.damage_shield.explosion.resist.tooltip=Resistance to Explosions
+xat.config.server.damage_shield.explosion.resist=Взрывостойкость
+xat.config.server.damage_shield.explosion.resist.tooltip=Сопротивление ко взрывам
 xat.config.server.damage_shield.explosion.resist.amount=Explosion Resistance Amount
 xat.config.server.damage_shield.explosion.resist.amount.tooltip=Multiply Incoming Explosion Source Damage by this Amount
-xat.config.server.damage_shield.resistance=Resistance Potion
+xat.config.server.damage_shield.resistance=Зельестойкость
 xat.config.server.damage_shield.resistance.tooltip=Option to change what 'Resistance' is
-xat.config.server.damage_shield.resistance.level=Resistance Level
+xat.config.server.damage_shield.resistance.level=Уровень сопротивления
 xat.config.server.damage_shield.resistance.level.tooltip=Level of Resistance when worn. Default 0
-xat.config.server.damage_shield.resistance.stacks=Resistance Stacks
+xat.config.server.damage_shield.resistance.stacks=Суммирования сопротивления
 xat.config.server.damage_shield.resistance.stacks.tooltip=If the Shield of Honors Resistance should Stack with Resistance from other sources
-xat.config.server.damage_shield.resistance.stacks.max=Max Stackable Resistance
+xat.config.server.damage_shield.resistance.stacks.max=Макс. кол-во суммируемого сопротивления
 xat.config.server.damage_shield.resistance.stacks.max.tooltip=The max level resistance can be stacked up to
-xat.config.server.damage_shield.epic.gamer=Epic Pro Gamer
+xat.config.server.damage_shield.epic.gamer=Эпичный профессиональный игрок
 xat.config.server.damage_shield.epic.gamer.tooltip=Only Disable this if you're 'The' Epic Pro Gamer (Easter Egg)
-xat.config.server.damage_shield.firstaid.ignore.headshots=Ignore Headshots
+xat.config.server.damage_shield.firstaid.ignore.headshots=Игнорирование выстрелов в голову
 xat.config.server.damage_shield.firstaid.ignore.headshots.tooltip=If First aid is installed, Chance to Ignore Fatal Head Damage\nOnly Triggers if the Next Attack was supposed to kill you
-xat.config.server.damage_shield.firstaid.ignore.headshots.chance=Headshots Ignore Chance
+xat.config.server.damage_shield.firstaid.ignore.headshots.chance=Шанс игнорирования выстрелов в голову
 xat.config.server.damage_shield.firstaid.ignore.headshots.chance.tooltip=1 in X Chance to Ignore Fatal Headshot Damage
 
-xat.config.client.damage_shield.volume=Effect Volume
+xat.config.client.damage_shield.volume=Громкость эффектов
 xat.config.client.damage_shield.volume.tooltip=Volume of the Sound effect when the Shield of Honor blocks damage
 
 xat.config.inertia_null_stone=Stone of Inertia Null Settings
@@ -831,10 +830,10 @@ xat.config.server.faelis_claw.bleeding.duration.tooltip=How long bleeding lasts 
 xat.config.server.faelis_claw.bleeding.chance=Bleed Chance
 xat.config.server.faelis_claw.bleeding.chance.tooltip=1 in X Chance to cause bleed, setting this value to 0 always causes bleed
 
-#####################################[Item Configs End]#####################################
+####[Item Configs End]####
 
-#####################################[Magic Configs]#####################################
-xat.config.magic=Magic Settings
+####[Magic Configs]####
+xat.config.magic=Настройки магии
 xat.config.magic.tooltip=
 
 xat.config.magic.moon_rose.essence=Moon Rose Essence
@@ -862,13 +861,13 @@ xat.config.magic.mana.cap.bonus=Bonus Mana Cap
 xat.config.magic.mana.cap.bonus.tooltip=Cap Bonus Mana Obtained from Mana Crystals and Moon Rose, set to 0 to disable
 xat.config.magic.mana.recovery.list=Recovery Items
 xat.config.magic.mana.recovery.list.tooltip=Items that Recover Mana\n modid:item_name;meta;amount
-xat.config.magic.mana.players_only=Only Players
-xat.config.magic.mana.players_only.tooltip=Only players have Mana
+xat.config.magic.mana.players_only=Только игроки
+xat.config.magic.mana.players_only.tooltip=Только у игрока есть Мана.
 
-#####################################[Magic Configs End]#####################################
+####[Magic Configs End]####
 
-#####################################[Race Configs]#####################################
-xat.config.races=Race Settings
+####[Race Configs]####
+xat.config.races=Настройки расы
 
 xat.config.races.dwarf=Dwarf Race Settings
 xat.config.races.dwarf.blocks=Block Settings
@@ -896,7 +895,7 @@ xat.config.races.dwarf.skilledminer.tooltip=Should the Dwarves Ring lower the mi
 xat.config.races.dwarf.static_mining=Static Mining
 xat.config.races.dwarf.static_mining.tooltip=When Mining, Mining Speed is static at (Block Hardness * 4), Not Including other Modifiers.
 
-xat.config.races.elf=Elf Race Settings
+xat.config.races.elf=Настройки расы Эльфа
 xat.config.races.elf.chargeshot.enabled=Charge Shot
 xat.config.races.elf.chargeshot.enabled.tooltip=Should Elves have the ability to enhance bow attacks with Mana
 xat.config.races.elf.chargeshot.cost=Charge Shot Cost
@@ -1005,7 +1004,7 @@ xat.config.races.dragon.breath.damage.tooltip=How much damage per tick the drago
 xat.config.races.dragon.breath.cost=Dragon Breath Cost
 xat.config.races.dragon.breath.cost.tooltip=The Mana Cost per tick when using dragons breath
 
-####################################Misc Configs####################################
+###Misc Configs###
 
 xat.config.potion.settings=Potion Settings
 xat.config.potion.settings.tooltip=Settings regarding the potions.
@@ -1063,482 +1062,3 @@ xat.config.immunities.potions.tooltip=Potions in this list can not be obtained
 
 xat.config.attributes=Attributes
 xat.config.attributes.tooltip="For More Information on Attributes"\n"https://minecraft.gamepedia.com/Attribute"
-
-
-{
-"creative_tab.apothic_enchanting.all": "Apothic Enchanting",
-
-"block.apothic_enchanting.hellshelf": "Hellshelf",
-"block.apothic_enchanting.infused_hellshelf": "Infused Hellshelf",
-"block.apothic_enchanting.blazing_hellshelf": "Blazing Hellshelf",
-"block.apothic_enchanting.glowing_hellshelf": "Glowing Hellshelf",
-
-"block.apothic_enchanting.seashelf": "Seashelf",
-"block.apothic_enchanting.infused_seashelf": "Infused Seashelf",
-"block.apothic_enchanting.crystal_seashelf": "Crystalline Seashelf",
-"block.apothic_enchanting.heart_seashelf": "Heart-Forged Seashelf",
-
-"block.apothic_enchanting.dormant_deepshelf": "Dormant Deepshelf",
-"block.apothic_enchanting.deepshelf": "Deepshelf",
-"block.apothic_enchanting.echoing_deepshelf": "Echoing Deepshelf",
-"block.apothic_enchanting.soul_touched_deepshelf": "Soul-Touched Deepshelf",
-
-"block.apothic_enchanting.echoing_sculkshelf": "Echoing Sculkshelf",
-"block.apothic_enchanting.soul_touched_sculkshelf": "Soul-Touched Sculkshelf",
-
-"block.apothic_enchanting.endshelf": "Endshelf",
-"block.apothic_enchanting.infused_endshelf": "Infused Endshelf",
-"block.apothic_enchanting.pearl_endshelf": "Pearlescent Endshelf",
-"block.apothic_enchanting.draconic_endshelf": "Draconic Endshelf",
-
-"block.apothic_enchanting.beeshelf": "Beeshelf",
-"block.apothic_enchanting.melonshelf": "Melonshelf",
-"block.apothic_enchanting.stoneshelf": "Stoneshelf",
-
-"block.apothic_enchanting.sightshelf": "Hellshelf of Sight",
-"block.apothic_enchanting.sightshelf_t2": "Hellshelf of Masterful Sight",
-
-"block.apothic_enchanting.filtering_shelf": "Seashelf of Aquatic Filtration",
-"block.apothic_enchanting.treasure_shelf": "Deepshelf of Arcane Treasures",
-"block.apothic_enchanting.geode_shelf": "Geode-Encased Bookshelf of Stability",
-
-"block.apothic_enchanting.library": "Библиотека чар",
-"block.apothic_enchanting.ender_library": "Александрийская библиотека",
-
-"info.apothic_enchanting.ench_power": "Provides %s enchanting power.",
-"info.apothic_enchanting.masterwork": "Masterwork",
-"info.apothic_enchanting.twisted": "Twisted",
-"info.apothic_enchanting.corrupted": "Corrupted",
-"info.apothic_enchanting.enchanting": "Enchanting tables can now exceed 30 levels.  Some enchantments may only show up past level 30.",
-"gui.apothic_enchanting.enchant.eterna": "Eterna",
-"gui.apothic_enchanting.enchant.quanta": "Quanta",
-"gui.apothic_enchanting.enchant.arcana": "Arcana",
-"gui.apothic_enchanting.enchant.rectification": "Rectification",
-"info.apothic_enchanting.ench_stats": "Enchanting Stats:",
-"info.apothic_enchanting.eterna": " - Eterna: %s",
-"info.apothic_enchanting.quanta": " - Quanta: %s%%",
-"info.apothic_enchanting.arcana": " - Arcana: %s%%",
-"info.apothic_enchanting.rectification": " - Rectification: %s%%",
-"info.apothic_enchanting.clues": " - Enchanting Clues: %s",
-"info.apothic_enchanting.allows_treasure": " - Allows Treasure Enchantments",
-"info.apothic_enchanting.provides_stability": " - Provides Quantic Stability",
-"info.apothic_enchanting.filter": "Enchantment Filter:",
-"info.apothic_enchanting.eterna.p": " - Eterna: +%s (Max %s)",
-"info.apothic_enchanting.quanta.p": " - Quanta: +%s%%",
-"info.apothic_enchanting.arcana.p": " - Arcana: +%s%%",
-"info.apothic_enchanting.rectification.p": " - Rectification: +%s%%",
-"info.apothic_enchanting.clues.p": " - Enchanting Clues: +%s",
-"info.apothic_enchanting.eterna.t": "Eterna: %s/%s",
-"info.apothic_enchanting.quanta.t": "Quanta: %s%%",
-"info.apothic_enchanting.arcana.t": "Arcana: %s%%",
-"info.apothic_enchanting.rectification.t": "Rectification: %s%%",
-"info.apothic_enchanting.clues.t": "Enchanting Clues: %s",
-"gui.apothic_enchanting.enchant.eterna.desc": " - Magical Energy",
-"gui.apothic_enchanting.enchant.eterna.desc2": "Sets the max enchanting level",
-"gui.apothic_enchanting.enchant.eterna.desc3": "Current Value: %s/%s",
-"gui.apothic_enchanting.enchant.quanta.desc": " - Pure Chaos",
-"gui.apothic_enchanting.enchant.quanta.desc2": "Increases underlying randomness",
-"gui.apothic_enchanting.enchant.quanta.desc3": " lessens the negative effects",
-"gui.apothic_enchanting.enchant.quanta.desc4": "Current Value: %s%%",
-"gui.apothic_enchanting.enchant.arcana.desc": " - Ethereal Purity",
-"gui.apothic_enchanting.enchant.arcana.desc2": "Makes rare enchantments more common",
-"gui.apothic_enchanting.enchant.arcana.desc3": "and increases the number of enchantments",
-"gui.apothic_enchanting.enchant.arcana.desc4": "Base Value: %s%%",
-"gui.apothic_enchanting.enchant.arcana.desc5": "Total Value: %s%%",
-"ingredient.apothic_enchanting.ench": "Requires at least %s",
-"info.apothic_enchanting.gui_rectification": "Rectification: %s%%",
-"info.apothic_enchanting.quanta_buff": "Quantic Warping",
-"info.apothic_enchanting.quanta_reduc": "Reduction Potential: %s%%",
-"info.apothic_enchanting.quanta_growth": "Growth Potential: %s%%",
-"info.apothic_enchanting.ench_bonus": "Enchantability Bonus: %s%%",
-"info.apothic_enchanting.rel_weights": "Relative Weights",
-"info.apothic_enchanting.weight": "%s: %s",
-"info.apothic_enchanting.eterna_at_least": "Requires at least: %s/%s",
-"info.apothic_enchanting.percent_at_least": "Requires at least: %s%%",
-"info.apothic_enchanting.eterna_at_most": "But no more than: %s/%s",
-"info.apothic_enchanting.percent_at_most": "But no more than: %s%%",
-"info.apothic_enchanting.eterna_exact": "Requires exactly: %s/%s",
-"info.apothic_enchanting.percent_exact": "Requires exactly: %s%%",
-"recipes.apothic_enchanting.infusion": "Infusion Enchanting",
-"info.apothic_enchanting.book_range": "Power Range: [%s, %s]",
-"info.apothic_enchanting.discoverable": "Discoverable",
-"info.apothic_enchanting.discoverable.not": "Not Discoverable",
-"info.apothic_enchanting.lootable": "Lootable",
-"info.apothic_enchanting.lootable.not": "Not Lootable",
-"info.apothic_enchanting.tradeable": "Tradeable",
-"info.apothic_enchanting.tradeable.not": "Not Tradeable",
-"info.apothic_enchanting.treasure": "Treasure",
-"info.apothic_enchanting.treasure.not": "Not Treasure",
-"info.apothic_enchanting.filtering_shelf": "Insert enchanted books to prevent them from appearing in the table.",
-"info.apothic_enchanting.filtering_shelf2": "Gains eterna and arcana based on the number of inserted books.",
-
-"enchantment.apothic_enchanting.infusion": "Infusion",
-"enchantment.apothic_enchanting.infusion.desc": "Placeholder for Enchantment Crafting",
-
-"enchantment.apothic_enchanting.mounted_strike": "Mounted Strike",
-"enchantment.apothic_enchanting.mounted_strike.desc": "Deals extra damage when on a horse.",
-
-"enchantment.apothic_enchanting.miners_fervor": "Miner's Fervor",
-"enchantment.apothic_enchanting.miners_fervor.desc": "You will mine very fast, but never instantly.",
-
-"enchantment.apothic_enchanting.stable_footing": "Stable Footing",
-"enchantment.apothic_enchanting.stable_footing.desc": "Negates the mining speed penalty for flying.",
-
-"enchantment.apothic_enchanting.scavenger": "Scavenger",
-"enchantment.apothic_enchanting.scavenger.desc": "Mobs killed may roll their loot tables twice.",
-
-"enchantment.apothic_enchanting.life_mending": "Life-Mending",
-"enchantment.apothic_enchanting.life_mending.desc": "Consumes received healing to repair items.",
-
-"enchantment.apothic_enchanting.icy_thorns": "Icy Thorns",
-"enchantment.apothic_enchanting.icy_thorns.desc": "Slows attackers.",
-
-"enchantment.apothic_enchanting.bane_of_illagers": "Bane of Illagers",
-"enchantment.apothic_enchanting.bane_of_illagers.desc": "Illagers take increased damage.",
-
-"death.attack.apothic_enchanting:corrupted": "%s was drained by a corrupted enchantment.",
-"death.attack.apothic_enchanting:corrupted.player": "%s was corrupted by %s.",
-
-"item.apothic_enchanting.prismatic_web": "Prismatic Cobweb",
-"info.apothic_enchanting.prismatic_cobweb": "Can be used to remove curses.",
-
-"item.apothic_enchanting.inert_trident": "Inert Trident",
-"item.apothic_enchanting.other_tome": "Tome of the Others",
-"item.apothic_enchanting.helmet_tome": "Tome of Helmets",
-"item.apothic_enchanting.chestplate_tome": "Tome of Chestplates",
-"item.apothic_enchanting.leggings_tome": "Tome of Legplates",
-"item.apothic_enchanting.boots_tome": "Tome of Boots",
-"item.apothic_enchanting.weapon_tome": "Tome of Weaponry",
-"item.apothic_enchanting.pickaxe_tome": "Tome of the Miners",
-"item.apothic_enchanting.fishing_tome": "Tome of the Fishers",
-"item.apothic_enchanting.bow_tome": "Tome of the Archers",
-"item.apothic_enchanting.scrap_tome": "Tome of Scrapping",
-"item.apothic_enchanting.improved_scrap_tome": "Tome of Superior Scrapping",
-"item.apothic_enchanting.extraction_tome": "Tome of Extraction",
-"item.apothic_enchanting.warden_tendril": "Warden Tendril",
-"item.apothic_enchanting.infused_breath": "Infused Dragon's Breath",
-
-"info.apothic_enchanting.tome_error": "Bugged Item - Right click in the air to turn into an enchanted book.",
-"info.apothic_enchanting.other_tome": "Accepts miscellaneous enchantments.",
-"info.apothic_enchanting.helmet_tome": "Accepts helmet enchantments.",
-"info.apothic_enchanting.chestplate_tome": "Accepts chestplate enchantments.",
-"info.apothic_enchanting.leggings_tome": "Accepts legplate enchantments.",
-"info.apothic_enchanting.boots_tome": "Accepts boot enchantments",
-"info.apothic_enchanting.weapon_tome": "Accepts weapon enchantments.",
-"info.apothic_enchanting.pickaxe_tome": "Accepts pickaxe enchantments.",
-"info.apothic_enchanting.fishing_tome": "Accepts fishing pole enchantments.",
-"info.apothic_enchanting.bow_tome": "Accepts bow enchantments.",
-"info.apothic_enchanting.scrap_tome": "Extracts half of the enchantments from an item.",
-"info.apothic_enchanting.scrap_tome2": "Destroys the item in the process.",
-"info.apothic_enchanting.improved_scrap_tome": "Extracts all of the enchantments from an item.",
-"info.apothic_enchanting.improved_scrap_tome2": "Destroys the item in the process.",
-"info.apothic_enchanting.extraction_tome": "Extracts all of the enchantments from an item.",
-"info.apothic_enchanting.extraction_tome2": "Does not destroy the item.",
-
-"enchantment.apothic_enchanting.tempting": "Temptation",
-"enchantment.apothic_enchanting.tempting.desc": "Entices nearby farm animals.",
-
-"enchantment.apothic_enchanting.shield_bash": "Shield Bash",
-"enchantment.apothic_enchanting.shield_bash.desc": "Empowers damage done by shields.",
-
-"enchantment.apothic_enchanting.reflective_defenses": "Reflective Defenses",
-"enchantment.apothic_enchanting.reflective_defenses.desc": "Blocked attacks may harm the attacker.",
-
-"enchantment.apothic_enchanting.berserkers_fury": "Berserker's Fury",
-"enchantment.apothic_enchanting.berserkers_fury.desc": "Become enraged when taking damage. [⌛ 0:45]",
-
-"enchantment.apothic_enchanting.knowledge_of_the_ages": "Knowledge of the Ages",
-"enchantment.apothic_enchanting.knowledge_of_the_ages.desc": "Enemy drops are directly converted to experience.",
-
-"enchantment.apothic_enchanting.natures_blessing": "Nature's Blessing",
-"enchantment.apothic_enchanting.natures_blessing.desc": "Hoes may be used to bonemeal crops.",
-
-"enchantment.apothic_enchanting.rebounding": "Rebounding",
-"enchantment.apothic_enchanting.rebounding.desc": "Melee attackers may find themselves much further away.",
-
-"enchantment.apothic_enchanting.magic_protection": "Occult Aversion",
-"enchantment.apothic_enchanting.magic_protection.desc": "Magic damage dealt by and to the user is reduced.",
-
-"enchantment.apothic_enchanting.crescendo_of_bolts": "Crescendo of Bolts",
-"enchantment.apothic_enchanting.crescendo_of_bolts.desc": "Your crossbow may be fired additional times per reload.",
-
-"enchantment.apothic_enchanting.chromatic": "Chromatic Aberration",
-"enchantment.apothic_enchanting.chromatic.desc": "Sheared wool will be changed to a random color.",
-
-"enchantment.apothic_enchanting.worker_exploitation": "Worker Exploitation",
-"enchantment.apothic_enchanting.worker_exploitation.desc": "Wool received is doubled, but the sheep takes damage.",
-
-"enchantment.apothic_enchanting.growth_serum": "Growth Serum",
-"enchantment.apothic_enchanting.growth_serum.desc": "Sheep have a 50% chance to instantly regrow their wool.",
-
-"enchantment.apothic_enchanting.boon_of_the_earth": "Boon of the Earth",
-"enchantment.apothic_enchanting.boon_of_the_earth.desc": "Ores may be found when mining stone.",
-
-"enchantment.apothic_enchanting.chainsaw": "Chainsaw",
-"enchantment.apothic_enchanting.chainsaw.desc": "Trees will be annihilated.",
-
-"enchantment.apothic_enchanting.spearfishing": "Spearfishing",
-"enchantment.apothic_enchanting.spearfishing.desc": "Kills with a thrown trident may catch a fish.",
-
-"enchantment.apothic_enchanting.endless_quiver": "Endless Quiver",
-"enchantment.apothic_enchanting.endless_quiver.desc": "Makes all arrows infinite.",
-
-"menu.apothic_enchanting.library": "Enchantment Library",
-"tooltip.enchlib.capacity": "Level Capacity: %s",
-"tooltip.enchlib.max_lvl": "Max Level Available: %s",
-"tooltip.enchlib.points": "Points Stored: %s/%s",
-"tooltip.enchlib.unavailable": "Next Level Unavailable",
-"tooltip.enchlib.extracting": "Extracting Level %s",
-"tooltip.enchlib.cost": "Point Cost: %s",
-"tooltip.enchlib.item": "Storing %d enchantments",
-"tooltip.enchlib.nfilt": "Name Filter",
-"tooltip.enchlib.ifilt": "Item Filter",
-"info.apothic_enchanting.library": "The enchantment library is a block that stores enchantments. Inserting an enchanted book will deposit it. Left-clicking on a stored enchantment will extract one level of it. Shift-clicking will extract the max level available.",
-"info.apothic_enchanting.runes": "The Runes Reveal",
-"info.apothic_enchanting.no_clue": "The Runes Reveal Nothing",
-"info.apothic_enchanting.runes_all": "The Runes Reveal All",
-"info.apothic_enchanting.arcana_bonus": "Arcane Empowerments",
-"info.apothic_enchanting.weights_changed": "Rarity Weights Changed",
-"info.apothic_enchanting.min_enchants": "Minimum %s Enchantments",
-"info.apothic_enchanting.ench_at": "Enchanting at Level %s",
-"info.apothic_enchanting.xp_cost": "Raw XP Cost: %s (%s Levels)",
-"info.apothic_enchanting.power_range": "Power Range: %s to %s",
-"info.apothic_enchanting.item_ench": "Item Enchantability: %s",
-"info.apothic_enchanting.num_clues": "Enchanting Clues: %s",
-"info.apothic_enchanting.infusion_failed": "Infusion Criteria Not Met",
-"info.apothic_enchanting.anvil_at": "Forging at Level %s",
-"info.apothic_enchanting.anvil_xp_cost": "Raw XP Cost: %s",
-
-"menu.apothic_enchanting.enchanting_info": "Доступные чары",
-"info.apothic_enchanting.slider_power": "Сила: %s",
-"info.apothic_enchanting.enchinfo_level": "Уровень: %s",
-"info.apothic_enchanting.enchinfo_weight": "Weight: %s (%s)",
-"info.apothic_enchanting.enchinfo_chance": "Шанс: %s",
-"info.apothic_enchanting.enchinfo_slot": "Слот для чара %s",
-"info.apothic_enchanting.enchinfo_minpow": "Мин. силы: %s",
-"info.apothic_enchanting.enchinfo_maxpow": "Макс. силы: %s",
-
-"rarity.apothic_enchanting.common": "Обычный",
-"rarity.apothic_enchanting.uncommon": "Необычный",
-"rarity.apothic_enchanting.rare": "Редкий",
-"rarity.apothic_enchanting.very_rare": "Очень редкий",
-
-"info.apothic_enchanting.weights": "Weights",
-"info.apothic_enchanting.all_available": "View all available enchantments",
-
-"advancements.apothic_enchanting.enchantment": "The Secrets of Enchanting",
-"advancements.apothic_enchanting.enchantment.desc": "Obtain an enchanting table, and begin to unveil the mystery.",
-
-"advancements.apothic_enchanting.30ench": "The Basics",
-"advancements.apothic_enchanting.30ench.desc": "Enchant an item at level 30.",
-
-"advancements.apothic_enchanting.60ench": "Mastering Hell and Sea",
-"advancements.apothic_enchanting.60ench.desc": "Enchant an item at level 60.",
-
-"advancements.apothic_enchanting.80ench": "Enchantments from the Depths",
-"advancements.apothic_enchanting.80ench.desc": "Enchant an item at level 80.",
-
-"advancements.apothic_enchanting.100ench": "Draconic Enchanting",
-"advancements.apothic_enchanting.100ench.desc": "Enchant an item at level 100.",
-
-"advancements.apothic_enchanting.bookshelf": "Local Librarian",
-"advancements.apothic_enchanting.bookshelf.desc": "Create a bookshelf.",
-
-"advancements.apothic_enchanting.hellshelf": "The Chaos of Hell",
-"advancements.apothic_enchanting.hellshelf.desc": "Obtain a Hellshelf.",
-
-"advancements.apothic_enchanting.upgrade_hellshelf": "Mastering the Inferno",
-"advancements.apothic_enchanting.upgrade_hellshelf.desc": "Upgrade an Infused Hellshelf.",
-
-"advancements.apothic_enchanting.deepshelf": "Delving Into Darkness",
-"advancements.apothic_enchanting.deepshelf.desc": "Activate a Dormant Deepshelf.",
-
-"advancements.apothic_enchanting.sculkshelf": "Embracing the Sculk",
-"advancements.apothic_enchanting.sculkshelf.desc": "Create a Sculkshelf using a Warden Tendril.",
-
-"advancements.apothic_enchanting.endshelf": "Dragon-Slaying Enchanter",
-"advancements.apothic_enchanting.endshelf.desc": "Acquire Infused Dragon's Breath, and create an Endshelf.",
-
-"advancements.apothic_enchanting.upgrade_endshelf": "The Final Bookshelf",
-"advancements.apothic_enchanting.upgrade_endshelf.desc": "Upgrade an Endshelf into a Draconic Endshelf.",
-
-"advancements.apothic_enchanting.seashelf": "The Purity of the Seas",
-"advancements.apothic_enchanting.seashelf.desc": "Obtain a Seashelf",
-
-"advancements.apothic_enchanting.infuse_seashelf": "Sea Infusion",
-"advancements.apothic_enchanting.infuse_seashelf.desc": "Obtain an Infused Seashelf through Infusion Enchanting.",
-
-"advancements.apothic_enchanting.upgrade_seashelf": "Sleeping in the Cold Below",
-"advancements.apothic_enchanting.upgrade_seashelf.desc": "Upgrade an Infused Seashelf",
-
-"advancements.apothic_enchanting.infuse_hellshelf": "Hell Infusion",
-"advancements.apothic_enchanting.infuse_hellshelf.desc": "Obtain an Infused Hellshelf through Infusion Enchanting.",
-
-"advancements.apothic_enchanting.shieldench": "Shield Enchanter",
-"advancements.apothic_enchanting.shieldench.desc": "Enchant a shield",
-
-"advancements.apothic_enchanting.altar": "Oceanic Transformation",
-"advancements.apothic_enchanting.altar.desc": "Create an Altar of the Seas, which can turn unwanted enchanted items into a new book.",
-
-"advancements.apothic_enchanting.splitting": "Enchantment Crusher",
-"advancements.apothic_enchanting.splitting.desc": "Successfully drop an anvil enchanted with Splitting on an enchanted book to split it apart",
-
-"advancements.apothic_enchanting.sharp10": "Sharpestest",
-"advancements.apothic_enchanting.sharp10.desc": "Enchant a weapon with Sharpness X or higher",
-
-"advancements.apothic_enchanting.level20": "Unlimited Power",
-"advancements.apothic_enchanting.level20.desc": "Obtain an item with an enchantment at level XX or higher",
-
-"advancements.apothic_enchanting.enchanting_stats": "Eterna, Quanta, Arcana",
-"advancements.apothic_enchanting.enchanting_stats.desc": "Enchant an item while having at least 10 of each stat.",
-
-"advancements.apothic_enchanting.quanta0": "Begone, Flux",
-"advancements.apothic_enchanting.quanta0.desc": "Enchant an item at 0% Quanta.",
-
-"advancements.apothic_enchanting.quanta50": "Introduction to Chaos",
-"advancements.apothic_enchanting.quanta50.desc": "Enchant an item at 50% Quanta.",
-
-"advancements.apothic_enchanting.quanta100": "Rolling the Dice",
-"advancements.apothic_enchanting.quanta100.desc": "Enchant an item at 100% Quanta.",
-
-"advancements.apothic_enchanting.arcana50": "Magical Energy",
-"advancements.apothic_enchanting.arcana50.desc": "Enchant an item at 50% Arcana.",
-
-"advancements.apothic_enchanting.arcana100": "Arcane Power",
-"advancements.apothic_enchanting.arcana100.desc": "Enchant an item at 100% Arcana.",
-
-"advancements.apothic_enchanting.max_stats": "Maximum Strength",
-"advancements.apothic_enchanting.max_stats.desc": "Enchant an item while having all stats at maximum.",
-
-"advancements.apothic_enchanting.max_stable": "Stable Power",
-"advancements.apothic_enchanting.max_stable.desc": "Enchant an item while having max Eterna and Arcana, but 0% Quanta.",
-
-"advancements.apothic_enchanting.max_rectified": "Только самое лучшее",
-"advancements.apothic_enchanting.max_rectified.desc": "Enchant an item with max stats and max rectification.",
-
-"config.jade.plugin_apothic_enchanting.ench": "Apothic Enchanting",
-
-"rarity.enchantment.common": "Обычный",
-"rarity.enchantment.uncommon": "Необычный",
-"rarity.enchantment.rare": "Редкий",
-"rarity.enchantment.very_rare": "Очень редкий",
-
-"enchantment.level.0": "0",
-"enchantment.level.11": "XI",
-"enchantment.level.12": "XII",
-"enchantment.level.13": "XIII",
-"enchantment.level.14": "XIV",
-"enchantment.level.15": "XV",
-"enchantment.level.16": "XVI",
-"enchantment.level.17": "XVII",
-"enchantment.level.18": "XVIII",
-"enchantment.level.19": "XIX",
-"enchantment.level.20": "XX",
-"enchantment.level.21": "XXI",
-"enchantment.level.22": "XXII",
-"enchantment.level.23": "XXIII",
-"enchantment.level.24": "XXIV",
-"enchantment.level.25": "XXV",
-"enchantment.level.26": "XXVI",
-"enchantment.level.27": "XXVII",
-"enchantment.level.28": "XXVIII",
-"enchantment.level.29": "XXIX",
-"enchantment.level.30": "XXX",
-"enchantment.level.31": "XXXI",
-"enchantment.level.32": "XXXII",
-"enchantment.level.33": "XXXIII",
-"enchantment.level.34": "XXXIV",
-"enchantment.level.35": "XXXV",
-"enchantment.level.36": "XXXVI",
-"enchantment.level.37": "XXXVII",
-"enchantment.level.38": "XXXVIII",
-"enchantment.level.39": "XXXIX",
-"enchantment.level.40": "XL",
-"enchantment.level.41": "XLI",
-"enchantment.level.42": "XLII",
-"enchantment.level.43": "XLIII",
-"enchantment.level.44": "XLIV",
-"enchantment.level.45": "XLV",
-"enchantment.level.46": "XLVI",
-"enchantment.level.47": "XLVII",
-"enchantment.level.48": "XLVIII",
-"enchantment.level.49": "XLIX",
-"enchantment.level.50": "L",
-"enchantment.level.51": "LI",
-"enchantment.level.52": "LII",
-"enchantment.level.53": "LIII",
-"enchantment.level.54": "LIV",
-"enchantment.level.55": "LV",
-"enchantment.level.56": "LVI",
-"enchantment.level.57": "LVII",
-"enchantment.level.58": "LVIII",
-"enchantment.level.59": "LIX",
-"enchantment.level.60": "LX",
-"enchantment.level.61": "LXI",
-"enchantment.level.62": "LXII",
-"enchantment.level.63": "LXIII",
-"enchantment.level.64": "LXIV",
-"enchantment.level.65": "LXV",
-"enchantment.level.66": "LXVI",
-"enchantment.level.67": "LXVII",
-"enchantment.level.68": "LXVIII",
-"enchantment.level.69": "LXIX",
-"enchantment.level.70": "LXX",
-"enchantment.level.71": "LXXI",
-"enchantment.level.72": "LXXII",
-"enchantment.level.73": "LXXIII",
-"enchantment.level.74": "LXXIV",
-"enchantment.level.75": "LXXV",
-"enchantment.level.76": "LXXVI",
-"enchantment.level.77": "LXXVII",
-"enchantment.level.78": "LXXVIII",
-"enchantment.level.79": "LXXIX",
-"enchantment.level.80": "LXXX",
-"enchantment.level.81": "LXXXI",
-"enchantment.level.82": "LXXXII",
-"enchantment.level.83": "LXXXIII",
-"enchantment.level.84": "LXXXIV",
-"enchantment.level.85": "LXXXV",
-"enchantment.level.86": "LXXXVI",
-"enchantment.level.87": "LXXXVII",
-"enchantment.level.88": "LXXXVIII",
-"enchantment.level.89": "LXXXIX",
-"enchantment.level.90": "XC",
-"enchantment.level.91": "XCI",
-"enchantment.level.92": "XCII",
-"enchantment.level.93": "XCIII",
-"enchantment.level.94": "XCIV",
-"enchantment.level.95": "XCV",
-"enchantment.level.96": "XCVI",
-"enchantment.level.97": "XCVII",
-"enchantment.level.98": "XCVIII",
-"enchantment.level.99": "XCIX",
-"enchantment.level.100": "C",
-"enchantment.level.101": "CI",
-"enchantment.level.102": "CII",
-"enchantment.level.103": "CIII",
-"enchantment.level.104": "CIV",
-"enchantment.level.105": "CV",
-"enchantment.level.106": "CVI",
-"enchantment.level.107": "CVII",
-"enchantment.level.108": "CVIII",
-"enchantment.level.109": "CIX",
-"enchantment.level.110": "CX",
-"enchantment.level.111": "CXI",
-"enchantment.level.112": "CXII",
-"enchantment.level.113": "CXIII",
-"enchantment.level.114": "CXIV",
-"enchantment.level.115": "CXV",
-"enchantment.level.116": "CXVI",
-"enchantment.level.117": "CXVII",
-"enchantment.level.118": "CXVIII",
-"enchantment.level.119": "CXIX",
-"enchantment.level.120": "CXX",
-"enchantment.level.121": "CXXI",
-"enchantment.level.122": "CXXII",
-"enchantment.level.123": "CXXIII",
-"enchantment.level.124": "CXXIV",
-"enchantment.level.125": "CXXV",
-"enchantment.level.126": "CXXVI",
-"enchantment.level.127": "CXXVII"
-}
